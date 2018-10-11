@@ -1,6 +1,5 @@
-###########################
-#**Localization**
-###########################
+#Localization
+
  **Thư mục lưu trữ**
 ```--/resources
     --/lang
