@@ -19,7 +19,7 @@
  - Cấu hình gói ngôn ngữ mặc định tại đường dẫn config/app.php
    > 'locale' => 'en'
  - Cấu hình ngôn ngữ dự phòng khi ngôn ngữ mặc định không khả dụng bản dịch
-   'fallback_locale' => 'en'
+   > 'fallback_locale' => 'en'
  - Có thể thay đổi ngôn ngữ khi chạy bằng cách sử dụng phương thức setLocale() trong App
      ```
      Route::get('welcome/{locale}', function ($locale) {
@@ -34,17 +34,19 @@
  - Có thể sử dụng Json để lưu trữ ngôn ngữ lưu tại đường dẫn: > /resources/lang/name_language.json
 
  - Cách khai báo sử dụng ngôn ngữ trong views
- > {{ __('messages.key') }} or @lang('messages.key')` đối với lưu trữ dạng mảng`
- > {{ __('key') }} or @lang('key')// đối với json
+ ```
+ {{ __('messages.key') }} or @lang('messages.key') đối với lưu trữ dạng mảng
+  {{ __('key') }} or @lang('key')// đối với json
+  ```
  *) nếu không tồn tại chuỗi dịch sẽ tự động lấy key hiển thị
 
 
  - chèn 1 chuỗi nào đó vào chuỗi dịch sử dụng tiền tố :name
  trong đó name là tên chỗ muốn chèn
  vd:
- > 'welcome' => 'Welcome, :name',
- > view:  __('messages.welcome', ['name' => 'nguyen']);
-
+ ``` 'welcome' => 'Welcome, :name',
+  view:  __('messages.welcome', ['name' => 'nguyen']);
+```
 
  - Phần **Pluralization** gần giống if else xem thêm tại https://laravel.com/docs/5.7/localization#overriding-package-language-files
  - **Overriding Package Language Files**
