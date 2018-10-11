@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('localization')->group(function () {
+    Route::get('/{locale?}', 'LocalizationController@index');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
