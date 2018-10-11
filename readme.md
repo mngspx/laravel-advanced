@@ -1,28 +1,33 @@
 # Localization
 
  **Thư mục lưu trữ**
-```--/resources
+```
+--/resources
     --/lang
         --/en
             messages.php
         --/es
             messages.php
-
+```
  - Các file trong gói ngôn ngữ có dạng
  vd:
-     ```return [
+     ```
+     return [
          'welcome' => 'Welcome to our application'
      ];
+     ```
  - Cấu hình gói ngôn ngữ mặc định tại đường dẫn config/app.php
    > 'locale' => 'en'
  - Cấu hình ngôn ngữ dự phòng khi ngôn ngữ mặc định không khả dụng bản dịch
    'fallback_locale' => 'en'
  - Có thể thay đổi ngôn ngữ khi chạy bằng cách sử dụng phương thức setLocale() trong App
-     ```Route::get('welcome/{locale}', function ($locale) {
+     ```
+     Route::get('welcome/{locale}', function ($locale) {
          App::setLocale($locale);
 
          //
-     });```
+     });
+     ```
  - Sử dụng **getLocale()** xác định ngôn ngữ hiện tại
  - Sử dụng **isLocale('name_locale')** kiểm tra gói ngôn ngữ hiện tại có phải là **name_locale** không
 
