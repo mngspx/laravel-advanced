@@ -1,14 +1,14 @@
 ###########################
-#Localization
+#**Localization**
 ###########################
- - Thư mục lưu trữ
---/resources
+ **- Thư mục lưu trữ**
+```--/resources
     --/lang
         --/en
             messages.php
         --/es
             messages.php
-
+```
  - Các file trong gói ngôn ngữ có dạng
  vd:
      return [
