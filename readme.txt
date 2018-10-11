@@ -2,14 +2,14 @@
 #Localization
 ###########################
  - Thư mục lưu trữ
-/resources
-    /lang
-        /en
+--/resources
+    --/lang
+        --/en
             messages.php
-        /es
+        --/es
             messages.php
 
- - Các gói ngôn ngữ đều trả về 1 mảng
+ - Các file trong gói ngôn ngữ có dạng
  vd:
      return [
          'welcome' => 'Welcome to our application'
