@@ -7,12 +7,12 @@
             messages.php
         --/es
             messages.php
-```
+
  - Các file trong gói ngôn ngữ có dạng
  vd:
      ```return [
          'welcome' => 'Welcome to our application'
-     ];```
+     ];
  - Cấu hình gói ngôn ngữ mặc định tại đường dẫn config/app.php
    > 'locale' => 'en'
  - Cấu hình ngôn ngữ dự phòng khi ngôn ngữ mặc định không khả dụng bản dịch
