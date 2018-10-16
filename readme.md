@@ -50,7 +50,9 @@
 
  - Phần **Pluralization** gần giống if else xem thêm tại https://laravel.com/docs/5.7/localization#overriding-package-language-files
  - **Overriding Package Language Files**
+ 
  Một số gói sẽ có gói ngôn ngữ riêng. để không phải sửa lại file gốc có thể thêm file muốn ghi đè vào đường dẫn > resources/lang/vendor/{package}/{locale}
+ 
  Ví dụ:
  nếu bạn cần ghi đè các chuỗi dịch tiếng Anh trong messages.php cho một gói có tên là skyrim/hearthfire,
   bạn nên đặt một tệp ngôn ngữ tại: resources/lang/vendor/hearthfire/en/messages.php.
