@@ -48,7 +48,8 @@
   view:  __('messages.welcome', ['name' => 'nguyen']);
 ```
 
- - Phần **Pluralization** gần giống if else xem thêm tại https://laravel.com/docs/5.7/localization#overriding-package-language-files
+ - Phần **Pluralization** gần giống if else xem thêm tại https://laravel.com/docs/5.7/localization#pluralization
+ 
  - **Overriding Package Language Files**
  
  Một số gói sẽ có gói ngôn ngữ riêng. để không phải sửa lại file gốc có thể thêm file muốn ghi đè vào đường dẫn > resources/lang/vendor/{package}/{locale}
