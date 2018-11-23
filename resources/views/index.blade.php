@@ -1,0 +1,1 @@
+<!DOCTYPE html><html>    <head>        <meta charset="UTF-8">        <title></title>    </head>    <body>    <form action="" method="post">        {{--@csrf--}}        {{--Sau khi thêm URIs vào VerifyCsrfToken thì không cần @csrf nữa--}}        <input type="text" name="text"/>        <input type="submit" name="btnSubmit"/>    </form>    </body></html>
