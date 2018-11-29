@@ -167,7 +167,8 @@ Redis::psubscribe(['users.*'], function ($message, $channel) {
 **Tạo ứng dụng chat đơn giản kết hợp Nodejs và socketio**
 
 1. Tạo folder node_server trong project laravel để tạo server node
-Vào folder mới tạo chạy lệnh: 
+Vào folder mới tạo chạy lệnh:  
+
 `npm install express redis socket.io --save`
 
 để cài đặt các gói cần thiết
